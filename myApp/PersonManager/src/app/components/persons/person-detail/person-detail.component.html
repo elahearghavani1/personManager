@@ -1,0 +1,52 @@
+<div class="wrapper">
+  <div class="container">
+         <div class="row">
+      <div class="col-12 d-flex justify-content-center">
+        <h3 class="main-title">جزئیات</h3>
+      </div>
+    </div>
+      <div class="main__container p-3">
+            <div class="detail__container">
+                  <ul>
+                        <li>
+                              <span>نام:</span>
+                              <span>{{item.name}}</span>
+                        </li>
+                         <li>
+                              <span>نام خانوادگی:</span>
+                              <span> 
+                                    {{item.lastName}}
+                              </span>
+                        </li>
+                        <li>
+                              <span>
+                                    پست الکترونیک:
+                              </span>
+                              <span>
+                                   {{item.email}}
+                              </span>
+                        </li>
+                          <li>
+                              <span>
+                                    شماره تماس:
+                              </span>
+                              <span>
+                                   {{item.phone}}
+                              </span>
+                        </li>
+                        <li>
+                              <span>
+                                   کد ملی:
+                              </span>
+                              <span>
+                                   {{item.nationalCode}}
+                              </span>
+                        </li>
+                        </ul>
+                  </div>
+                  <div class="back-botton__container">
+                <a class="btn btn-info" routerLink="/" routerLinkActive="active">بازگشت</a>
+      </div>
+            </div>
+      </div>
+      </div>

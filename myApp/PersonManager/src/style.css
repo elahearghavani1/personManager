@@ -1,0 +1,122 @@
+@font-face{
+  src: url('src/assets/fonts/B-Nazanin/B-Nazanin.ttf');
+  font-family: "B-Nazanin";
+  font-display: swap;
+}
+@font-face{
+  src: url('src/assets/fonts/B-Titr/B Titr Bold_0.ttf');
+  font-family: "B-Titr";
+  font-display: swap;
+}
+
+body {
+  background: #74ebd5;
+  background: -webkit-linear-gradient(to right, #74ebd5, #ACB6E5) !important;
+  background: linear-gradient(to right, #74ebd5, #ACB6E5) !important;
+  font-family:"B-Nazanin";
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.wrapper {
+	padding: 12px 0 0;
+}
+
+.wrapper .main__container {
+	background-color: #fff;
+	width: 100%;
+	height: 200px;
+	margin: 20px 0;
+	border-radius: 10px;
+	min-height: 80vh;
+	height: auto;
+}
+
+.modal-header {
+	background: #505050;
+	color: #fff;
+	font-family: 'B-Titr';
+	font-size: 21px;
+}
+
+.modal-header .close {
+	background: unset;
+	border: unset;
+	color: #fff;
+	outline: none;
+}
+
+.modal-body,
+.modal-header {
+	direction: rtl;
+}
+
+.modal-body .btn {
+	float: right;
+	margin: 20px 2px;
+}
+
+.modal-body form {
+	position: relative;
+}
+.modal-footer{
+border-top: unset;
+direction: rtl;
+}
+
+.modal-footer .btn{
+	font-size: 22px;
+}
+
+
+.form-row input {
+	margin-bottom: 10px;
+	font-size: 22px;
+}
+
+.form-row label {
+	color: #424040;
+	font-size: 22px;
+	margin-right: 7px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.wrapper .main-title {
+	font-size: 35px;
+	font-family: "B-Titr";
+}
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+
+input[type=number] {
+	-moz-appearance: textfield;
+}
+
+.help-block span {
+	font-size: 15px;
+	position: absolute;
+	left:15px;
+	color: red;
+  font-weight: bold;
+}
+
+input.ng-invalid.ng-touched {
+	border: 1px solid red;
+}
+
+.confirm p{
+font-size: 24px;
+}
+
+.toast-container{
+  direction: rtl;
+}

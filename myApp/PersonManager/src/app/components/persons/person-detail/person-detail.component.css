@@ -1,0 +1,43 @@
+.main__container{
+min-height: 68vh;
+height:auto ;
+}
+.detail__container{
+    width: 100%;
+    padding: 60px 30px;
+	overflow-y: auto;
+	_overflow: auto;
+	margin: 0 0 1em;
+}
+.detail__container ul{
+    list-style: none;
+    direction: rtl;
+}
+.detail__container ul li{
+    padding: 15px 0;
+}
+.detail__container ul li span:first-child{
+    font-family: 'B-Titr';
+    font-size: 22px;
+    padding-left:10px ;
+}
+.detail__container ul li span:nth-child(2){
+    font-family: 'B-Nazanin';
+    font-size: 24px;
+}
+.btn-info{
+    color: #fff;
+    font-size: 22px;
+}
+@media screen and (max-width: 768px) {
+.detail__container{
+padding: 15px 0;
+}
+.detail__container ul{
+padding: 10px;
+}
+.detail__container ul li span:first-child,.detail__container ul li span:nth-child(2){
+    font-size: 20px;
+}
+
+}

@@ -1,0 +1,105 @@
+.wrapper .main__container table .operation {
+	display: flex;
+}
+
+.wrapper .main__container table .operation i {
+	padding: 3px;
+}
+
+.wrapper thead {
+	background: #000;
+	color: #fff;
+	font-size: 20px;
+	font-family: 'B-Titr';
+}
+
+.wrapper tbody {
+	font-size: 23px;
+}
+
+.warpper .create-btn {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+button[type="reset"] {
+	color: #fff;
+}
+
+.wrapper .delete::before {
+	content: "";
+	width: 20px;
+	height: 30px;
+	display: block;
+	background-image: url('src/assets/images/delete.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.wrapper .edit::before {
+	content: "";
+	width: 30px;
+	height: 30px;
+	display: block;
+	background-image: url('src/assets/images/edit.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.wrapper .detail{
+	padding: 3px 0;
+	width: 36px;
+}
+.wrapper .detail::before {
+	content: "";
+	width: 30px;
+	height: 30px;
+	display: block;
+	background-image: url('src/assets/images/details.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.table__container {
+	width: 100%;
+	overflow-y: auto;
+	_overflow: auto;
+	margin: 0 0 1em;
+	min-height: 80vh;
+}
+
+.wrapper .table__container table {
+	direction: rtl;
+}
+
+.wrapper .top-button__container {
+	justify-content: end;
+}
+
+.purple {
+	background-color: #800080ad;
+	border: unset;
+	color: #fff;
+	outline: unset;
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.purple:hover {
+	background-color: #94a5ed;
+}
+
+@media screen and (max-width: 768px) {
+	.wrapper .top-button__container {
+		justify-content: center;
+	}
+	.wrapper thead {
+		font-size: 17px;
+	}
+	.wrapper tbody {
+	font-size: 19px;
+}
+}

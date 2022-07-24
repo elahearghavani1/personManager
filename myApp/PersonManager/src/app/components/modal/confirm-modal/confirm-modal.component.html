@@ -1,0 +1,15 @@
+ <div class="modal-header">
+          <h4 class="modal-title" id="modal-basic-title">حذف</h4>
+         <button type="button" class="close" aria-label="Close" (click)="modal.close()"> 
+            <span aria-hidden="true">×</span>
+           </button>
+        </div>
+        <div class="modal-body confirm">
+        <p>
+          آیا از حذف این رکورد مطمئنید؟
+        </p> 
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-success" (click)="onDelete(modal)">تائید</button>
+          <button class="btn btn-danger" aria-label="Close" (click)="modal.close()">انصراف</button>
+        </div>

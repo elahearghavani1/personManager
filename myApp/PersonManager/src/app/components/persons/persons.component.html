@@ -1,0 +1,53 @@
+<div class="wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center">
+        <h3 class="main-title">لیست اشخاص</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 d-flex top-button__container">
+        <button class="btn purple create-btn" (click)="onCreate(form)"> شخص جدید</button> 
+      </div>
+    </div>
+
+    <div class="main__container p-3">
+      <div class="table__container">
+        <table class="table table-hover table-responsive">
+          <thead>
+            <tr>
+              <th scope="col">ردیف</th>
+              <th scope="col">نام</th>
+              <th scope="col">نام خانوادگی</th>
+              <th scope="col">پست الکترونیک</th>
+              <th scope="col">شماره تماس</th>
+                  <th scope="col">کد ملی</th>
+              <th scope="col">عملیات</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let person of this.data.data$ | async;let i = index" [attr.data-index]="i">
+              <th scope="row">{{i+1}}</th>
+              <td>{{person.name}}</td>
+              <td>{{person.lastName}}</td>
+              <td>{{person.email}}</td>
+              <td>{{person.phone}}</td>
+              <td>{{person.nationalCode}}</td>
+              <td class="operation">
+                <a class="detail" routerLink="/detail/{{person.id}}"></a>
+                <i class="edit" (click)="onFetch(person.id,form)"></i> 
+                <i class="delete" (click)="onConfirm(person.id,confirm)"></i>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+        <ng-template #confirm let-modal>
+          <app-confirm-modal currentId="{{currentId}}"></app-confirm-modal>
+        </ng-template>
+        <ng-template #form let-modal>
+        <app-form-modal currentId="{{currentId}}"></app-form-modal>
+        </ng-template>
+    </div>
+  </div>
+</div>
